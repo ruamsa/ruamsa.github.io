@@ -21,15 +21,16 @@
         font-family: "Lato", sans-serif
     }
 
-    table{
+    table {
         border-collapse: collapse;
-        margin-left:auto; 
-        margin-right:auto;
+        margin-left: auto;
+        margin-right: auto;
         table-layout: fixed;
         width: 100%;
     }
 
-    td, th{
+    td,
+    th {
         text-align: center;
         padding: 8px;
         height: 300px;
@@ -40,11 +41,6 @@
     h1,
     button {
         font-family: "Montserrat", sans-serif
-    }
-
-    .fa-anchor,
-    .fa-heart {
-        font-size: 200px
     }
 
     .darkRed {
@@ -68,6 +64,14 @@
             display: none !important;
         }
     }
+
+    @media (max-width:600px){
+        td{
+            height: 350px;
+            display: flex;
+            width: 10em;
+        }
+    }
 </style>
 
 <body>
@@ -86,10 +90,13 @@
             <a href="preHealthConference.html"
                 class="w3-bar-item w3-button hideMinusNavWidth w3-padding-64 w3-hover-white">Pre-Health Conference</a>
             <a href="meetUs.html" class="w3-bar-item w3-button w3-padding-64 w3-white">Meet Us</a>
-            <a href="preHealthResources.html" class="w3-bar-item w3-button hideMinusNavWidth w3-padding-64 w3-hover-white">Pre-Health
+            <a href="preHealthResources.html"
+                class="w3-bar-item w3-button hideMinusNavWidth w3-padding-64 w3-hover-white">Pre-Health
                 Resources/Opportunities</a>
-            <a href="pastMeetings.html" class="w3-bar-item w3-button hideMinusNavWidth w3-padding-64 w3-hover-white">Past Meetings</a>
-            <a href="pastMemories.html" class="w3-bar-item w3-button hideMinusNavWidth w3-padding-64 w3-hover-white">Past Memories</a>
+            <a href="pastMeetings.html"
+                class="w3-bar-item w3-button hideMinusNavWidth w3-padding-64 w3-hover-white">Past Meetings</a>
+            <a href="pastMemories.html"
+                class="w3-bar-item w3-button hideMinusNavWidth w3-padding-64 w3-hover-white">Past Memories</a>
         </div>
 
         <!-- Navbar on small screens -->
@@ -97,7 +104,8 @@
             <a href="home.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
             <a href="aboutUs.html" class="w3-bar-item w3-button w3-padding-large">About Us</a>
             <a href="preHealthConference.html" class="w3-bar-item w3-button w3-padding-large">Pre-Health Conference</a>
-            <a href="preHealthResources.html" class="w3-bar-item w3-button w3-padding-large">Pre-Health Resources/Opportunities</a>
+            <a href="preHealthResources.html" class="w3-bar-item w3-button w3-padding-large">Pre-Health
+                Resources/Opportunities</a>
             <a href="pastMeetings.html" class="w3-bar-item w3-button w3-padding-large">Past Meetings</a>
             <a href="pastMemories.html" class="w3-bar-item w3-button w3-padding-large">Past Memories</a>
         </div>
@@ -110,7 +118,7 @@
         </div>
     </header>
 
-    
+
     <table class="w3-margin-top">
         <colgroup>
             <col span="1" style="width: 25%;">
@@ -121,8 +129,8 @@
         <tr>
             <td>
                 <img src="president1.jpg" alt="president 1" style="height: 100%; width: 100%; object-fit: contain;">
-                <div style= "color: black;">
-                    <h2 style= "color: darkred;">Shivam Rangolia</h2>
+                <div style="color: black;">
+                    <h2 style="color: darkred;">Shivam Rangolia</h2>
                     <p>Co-President</p>
                     <p>School of Arts and Sciences</p>
                     <p>Exercise Science</p>
@@ -131,8 +139,8 @@
             </td>
             <td>
                 <img src="president2.jpg" alt="president 2" style="height: 100%; width: 100%; object-fit: contain;">
-                <div style= "color: black;">
-                    <h2 style= "color: darkred;">Nithisha Cheedalla</h2>
+                <div style="color: black;">
+                    <h2 style="color: darkred;">Nithisha Cheedalla</h2>
                     <p>Co-President</p>
                     <p>School of Arts and Sciences</p>
                     <p>Cell Biology & Neuroscience</p>
@@ -140,9 +148,10 @@
                 </div>
             </td>
             <td>
-                <img src="vicePresident.jpg" alt="vice president" style="height: 100%; width: 100%; object-fit: contain;">
-                <div style= "color: black;">
-                    <h2 style= "color: darkred;">Riya Savla</h2>
+                <img src="vicePresident.jpg" alt="vice president"
+                    style="height: 100%; width: 100%; object-fit: contain;">
+                <div style="color: black;">
+                    <h2 style="color: darkred;">Riya Savla</h2>
                     <p>Vice President</p>
                     <p>School of Arts and Sciences</p>
                     <p>Cell Biology & Neuroscience</p>
@@ -151,8 +160,8 @@
             </td>
             <td>
                 <img src="treasurer.jpg" alt="treasurer" style="height: 100%; width: 100%; object-fit: contain;">
-                <div style= "color: black;">
-                    <h2 style= "color: darkred;">Arpan Bhagat</h2>
+                <div style="color: black;">
+                    <h2 style="color: darkred;">Arpan Bhagat</h2>
                     <p>Treasurer</p>
                     <p>School of Engineering</p>
                     <p>Biomedical Engineering</p>
@@ -163,8 +172,8 @@
         <tr>
             <td>
                 <img src="secretary.jpg" alt="secretary" style="height: 100%; width: 100%; object-fit: contain;">
-                <div style= "color: black;">
-                    <h2 style= "color: darkred;">Amay Mehta</h2>
+                <div style="color: black;">
+                    <h2 style="color: darkred;">Amay Mehta</h2>
                     <p>Secretary</p>
                     <p>School of Arts and Sciences</p>
                     <p>Public Health and Economics</p>
@@ -172,9 +181,10 @@
                 </div>
             </td>
             <td>
-                <img src="publicRelationsChair1.jpg" alt="public relations chair 1" style="height: 100%; width: 100%; object-fit: contain;">
-                <div style= "color: black;">
-                    <h2 style= "color: darkred;">Sohil Patankar</h2>
+                <img src="publicRelationsChair1.jpg" alt="public relations chair 1"
+                    style="height: 100%; width: 100%; object-fit: contain;">
+                <div style="color: black;">
+                    <h2 style="color: darkred;">Sohil Patankar</h2>
                     <p>Public Relations Chair</p>
                     <p>School of Engineering</p>
                     <p>Biomedical Engineering</p>
@@ -182,9 +192,10 @@
                 </div>
             </td>
             <td>
-                <img src="publicRelationsChair2.jpg" alt="public relations chair 2" style="height: 100%; width: 100%; object-fit: contain;">
-                <div style= "color: black;">
-                    <h2 style= "color: darkred;">Nazar Soroka</h2>
+                <img src="publicRelationsChair2.jpg" alt="public relations chair 2"
+                    style="height: 100%; width: 100%; object-fit: contain;">
+                <div style="color: black;">
+                    <h2 style="color: darkred;">Nazar Soroka</h2>
                     <p>Public Relations Chair</p>
                     <p>School of Arts and Sciences</p>
                     <p>Cell Biology & Neuroscience</p>
@@ -193,8 +204,8 @@
             </td>
             <td>
                 <img src="webmaster.jpg" alt="webmaster" style="height: 100%; width: 100%; object-fit: contain;">
-                <div style= "color: black;">
-                    <h2 style= "color: darkred;">Jawad Mamun</h2>
+                <div style="color: black;">
+                    <h2 style="color: darkred;">Jawad Mamun</h2>
                     <p>Webmaster/Historian</p>
                     <p>School of Arts and Sciences</p>
                     <p>Computer Science and Cell Biology & Neuroscience</p>
@@ -210,7 +221,7 @@
         </div>
     </header>
 
-    
+
     <table class="w3-margin-top">
         <colgroup>
             <col span="1" style="width: 33%;">
@@ -220,8 +231,8 @@
         <tr>
             <td>
                 <img src="fundraising1.jpg" alt="fundraising 1" style="height: 100%; width: 100%; object-fit: contain;">
-                <div style= "color: black;">
-                    <h2 style= "color: darkred;">Avi Ranadive</h2>
+                <div style="color: black;">
+                    <h2 style="color: darkred;">Avi Ranadive</h2>
                     <p>Fundraising Co-Chair</p>
                     <p>School of Arts and Sciences</p>
                     <p>Exercise Science</p>
@@ -229,17 +240,18 @@
             </td>
             <td>
                 <img src="fundraising2.jpg" alt="fundraising 2" style="height: 100%; width: 100%; object-fit: contain;">
-                <div style= "color: black;">
-                    <h2 style= "color: darkred;">Justin Cai</h2>
+                <div style="color: black;">
+                    <h2 style="color: darkred;">Justin Cai</h2>
                     <p>Fundraising Co-Chair</p>
                     <p>School of Arts and Sciences</p>
                     <p>Cell Biology & Neuroscience</p>
                 </div>
             </td>
             <td>
-                <img src="peerMentoring1.jpg" alt="peer mentoring chair 1" style="height: 100%; width: 100%; object-fit: contain;">
-                <div style= "color: black;">
-                    <h2 style= "color: darkred;">Haider Salam</h2>
+                <img src="peerMentoring1.jpg" alt="peer mentoring chair 1"
+                    style="height: 100%; width: 100%; object-fit: contain;">
+                <div style="color: black;">
+                    <h2 style="color: darkred;">Haider Salam</h2>
                     <p>Peer Mentoring Co-Chair</p>
                     <p>School of Arts and Sciences</p>
                     <p>Psychology and Cell Biology & Neuroscience</p>
@@ -248,27 +260,30 @@
         </tr>
         <tr>
             <td>
-                <img src="peerMentoring2.jpg" alt="peer mentoring chair 2" style="height: 100%; width: 100%; object-fit: contain;">
-                <div style= "color: black;">
-                    <h2 style= "color: darkred;">Vignesh Prasad</h2>
+                <img src="peerMentoring2.jpg" alt="peer mentoring chair 2"
+                    style="height: 100%; width: 100%; object-fit: contain;">
+                <div style="color: black;">
+                    <h2 style="color: darkred;">Vignesh Prasad</h2>
                     <p>Peer Mentoring Co-Chair</p>
                     <p>School of Arts and Sciences</p>
                     <p>Exercise Science</p>
                 </div>
             </td>
             <td>
-                <img src="grassroots1.jpg" alt="grassroots chair 1" style="height: 100%; width: 100%; object-fit: contain;">
-                <div style= "color: black;">
-                    <h2 style= "color: darkred;">Pranya Gaddipati</h2>
+                <img src="grassroots1.jpg" alt="grassroots chair 1"
+                    style="height: 100%; width: 100%; object-fit: contain;">
+                <div style="color: black;">
+                    <h2 style="color: darkred;">Pranya Gaddipati</h2>
                     <p>Grassroots/Global Health Co-Chair</p>
                     <p>School of Arts and Sciences</p>
                     <p>Genetics</p>
                 </div>
             </td>
             <td>
-                <img src="grassroots2.jpg" alt="grassroots chair 2" style="height: 100%; width: 100%; object-fit: contain;">
-                <div style= "color: black;">
-                    <h2 style= "color: darkred;">Aditya Jain</h2>
+                <img src="grassroots2.jpg" alt="grassroots chair 2"
+                    style="height: 100%; width: 100%; object-fit: contain;">
+                <div style="color: black;">
+                    <h2 style="color: darkred;">Aditya Jain</h2>
                     <p>Grassroots/Global Health Co-Chair</p>
                     <p>School of Arts and Sciences</p>
                     <p>Cell Biology & Neuroscience</p>
@@ -276,7 +291,7 @@
             </td>
         </tr>
     </table>
-    
+
     <!-- Footer -->
     <footer class="w3-container w3-black w3-padding-64 w3-center">
         <div class="w3-content">
