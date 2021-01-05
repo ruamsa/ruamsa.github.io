@@ -21,6 +21,10 @@
         font-family: "Lato", sans-serif
     }
 
+    #nav{
+        transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    }
+
     table {
         border-collapse: collapse;
         margin-left: auto;
@@ -65,8 +69,8 @@
         }
     }
 
-    @media (max-width:600px){
-        td{
+    @media (max-width:600px) {
+        td {
             height: 350px;
             display: flex;
             width: 10em;
@@ -128,7 +132,8 @@
         </colgroup>
         <tr>
             <td>
-                <img src="president1.jpg" alt="president 1" style="height: 100%; width: 100%; object-fit: contain; margin-right:3em;">
+                <img src="president1.jpg" alt="president 1"
+                    style="height: 100%; width: 100%; object-fit: contain; margin-right:3em;">
                 <div style="color: black;">
                     <h2 style="color: darkred;">Shivam Rangolia</h2>
                     <p>Co-President</p>
@@ -138,7 +143,8 @@
                 </div>
             </td>
             <td>
-                <img src="president2.jpg" alt="president 2" style="height: 100%; width: 100%; object-fit: contain; margin-right:3em;">
+                <img src="president2.jpg" alt="president 2"
+                    style="height: 100%; width: 100%; object-fit: contain; margin-right:3em;">
                 <div style="color: black;">
                     <h2 style="color: darkred;">Nithisha Cheedalla</h2>
                     <p>Co-President</p>
@@ -159,7 +165,8 @@
                 </div>
             </td>
             <td>
-                <img src="treasurer.jpg" alt="treasurer" style="height: 100%; width: 100%; object-fit: contain; margin-right:1.5em;">
+                <img src="treasurer.jpg" alt="treasurer"
+                    style="height: 100%; width: 100%; object-fit: contain; margin-right:1.5em;">
                 <div style="color: black;">
                     <h2 style="color: darkred;">Arpan Bhagat</h2>
                     <p>Treasurer</p>
@@ -171,7 +178,8 @@
         </tr>
         <tr>
             <td>
-                <img src="secretary.jpg" alt="secretary" style="height: 100%; width: 100%; object-fit: contain; margin-right:3em;">
+                <img src="secretary.jpg" alt="secretary"
+                    style="height: 100%; width: 100%; object-fit: contain; margin-right:3em;">
                 <div style="color: black;">
                     <h2 style="color: darkred;">Amay Mehta</h2>
                     <p>Secretary</p>
@@ -203,7 +211,8 @@
                 </div>
             </td>
             <td>
-                <img src="webmaster.jpg" alt="webmaster" style="height: 100%; width: 100%; object-fit: contain; margin-right:3em;">
+                <img src="webmaster.jpg" alt="webmaster"
+                    style="height: 100%; width: 100%; object-fit: contain; margin-right:3em;">
                 <div style="color: black;">
                     <h2 style="color: darkred;">Jawad Mamun</h2>
                     <p>Webmaster/Historian</p>
@@ -230,7 +239,8 @@
         </colgroup>
         <tr>
             <td>
-                <img src="fundraising1.jpg" alt="fundraising 1" style="height: 100%; width: 100%; object-fit: contain; margin-right:3em;">
+                <img src="fundraising1.jpg" alt="fundraising 1"
+                    style="height: 100%; width: 100%; object-fit: contain; margin-right:3em;">
                 <div style="color: black;">
                     <h2 style="color: darkred;">Avi Ranadive</h2>
                     <p>Fundraising Co-Chair</p>
@@ -239,7 +249,8 @@
                 </div>
             </td>
             <td>
-                <img src="fundraising2.jpg" alt="fundraising 2" style="height: 100%; width: 100%; object-fit: contain; margin-right:3em;">
+                <img src="fundraising2.jpg" alt="fundraising 2"
+                    style="height: 100%; width: 100%; object-fit: contain; margin-right:3em;">
                 <div style="color: black;">
                     <h2 style="color: darkred;">Justin Cai</h2>
                     <p>Fundraising Co-Chair</p>
@@ -330,6 +341,19 @@
             var desiredMargin = y.offsetHeight;
             x.style.marginTop = desiredMargin.toString() + "px";
         });
+
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            var navBar = document.getElementById("nav");
+            var navBarHeight = navBar.offsetHeight;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("nav").style.top = "0";
+            } else {
+                document.getElementById("nav").style.top = "-" + navBarHeight.toString() + "px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
 
     </script>
 

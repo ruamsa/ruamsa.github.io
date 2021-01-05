@@ -21,6 +21,10 @@
         font-family: "Lato", sans-serif
     }
 
+    #nav{
+        transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    }
+
     table {
         border-collapse: collapse;
         margin-left: auto;
@@ -227,6 +231,18 @@
             x.style.marginTop = desiredMargin.toString() + "px";
         });
 
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            var navBar = document.getElementById("nav");
+            var navBarHeight = navBar.offsetHeight;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("nav").style.top = "0";
+            } else {
+                document.getElementById("nav").style.top = "-" + navBarHeight.toString() + "px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
     </script>
 
 </body>
